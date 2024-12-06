@@ -68,6 +68,15 @@
             list-style-type: none; /* Använder en emoji som punkt */
         }
 
+
+        .card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -95,7 +104,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
-
+        
         .event-content {
             text-align: left;
             margin-bottom: 15px;
@@ -168,17 +177,17 @@
 
     <!-- Huvudsektion -->
     <main>
-        <section id="home">
+        <section id="home" class="card">
             <h1>Välkommen till FLASHBANGFIRMAN!</h1>
             <p>Vi är en studiesocial förening vid Linköpings universitet som erbjuder studenter en chans att komma samman, ha roligt och skapa minnen tillsammans.</p>
         </section>
 
-        <section id="about">
+        <section id="about" class="card">
             <h2>Om oss</h2>
             <p>FLASHBANGFIRMAN är en studentsammanslutning som fokuserar på att skapa en välkomnande och engagerande gemenskap för studenter vid Linköpings universitet. Vi anordnar olika sociala aktiviteter och event för att bygga nätverk, skapa nya vänskapsband och ha kul tillsammans. Vår förening är öppen för alla studenter oavsett program eller studieår.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="card">
             <h2>Våra aktiviteter</h2>
             <p>Vi erbjuder ett brett utbud av sociala och roliga aktiviteter som ger studenter en chans att koppla av, nätverka och ha kul tillsammans. Några av våra aktiviteter inkluderar:</p>
             <ul>
@@ -190,7 +199,7 @@
             <p>Följ oss för att hålla dig uppdaterad om våra kommande evenemang!</p>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Kontakt</h2>
             <p>Har du frågor eller vill veta mer om våra aktiviteter? Tveka inte att höra av dig till oss!</p>
             <p>Email: <a href="mailto:flashbangfirman@gmail.com">flashbangfirman@gmail.com</a></p>
@@ -200,6 +209,7 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </section>
+    </main>
 
         <section id="history">
             <h2>Vår historia</h2>
