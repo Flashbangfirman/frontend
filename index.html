@@ -72,6 +72,63 @@
             color: #333;
         }
 
+        #history {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #history p {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .event {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .event-content {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .event-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .event-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .event-images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px; /* Avstånd mellan bilder */
+        }
+
+        .event-images img {
+            width: 32%; /* Gör bilderna responsiva och jämnt fördelade */
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-images img:hover {
+            transform: scale(1.05); /* Förstorar bilden vid hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
         /* Fotnot */
         footer {
             background-color: var(--reflex);
@@ -100,6 +157,7 @@
                 <li><a href="#about">Om oss</a></li>
                 <li><a href="#services">Våra aktiviteter</a></li>
                 <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#history">Historia</a></li>
             </ul>
         </nav>
     </header>
@@ -137,6 +195,36 @@
                 <li><a href="https://www.facebook.com/profile.php?id=100092318740419" target="_blank" rel="noopener noreferrer">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
             </ul>
+        </section>
+
+        <section id="history">
+            <h2>Vår historia</h2>
+            <div class="event">
+                <div class="event-content">
+                    <h3>Cykelfesten</h3>
+                    <p>Inte många meter cyklades men det åts och drack mer som kompensation</p>
+                </div>
+                <div class="event-images">
+                    <img src="cykelfesten-1.jpg" alt="Bild från cykelfesten">
+                    <img src="cykelfesten-2.jpg" alt="Bild från cykelfesten">
+                    <img src="cykelfesten-3.jpg" alt="Bild från cykelfesten">
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-content">
+                    <h3>Stilett</h3>
+                    <p>När medelskostoleken är 42 är klackar inte så lätt att gå i</p>
+                </div>
+                <div class="event-images">
+                    <img src="stilett-1.jpg" alt="Bild från stilett">
+                    <img src="stilett-2.jpg" alt="Bild från stilett">
+                    <img src="stilett-3.jpg" alt="Bild från stilett">
+                </div>
+            </div>
+    
+    
+            <!-- Lägg till fler inlägg här -->
         </section>
     </main>
 
