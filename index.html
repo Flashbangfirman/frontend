@@ -96,52 +96,6 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-        }
-
-        main ul {
-            list-style-type: none; /* Använder en emoji som punkt */
-            padding: 0;
-            margin: 0;
-        }
-
-        main ul li {
-            margin-bottom: 10px;
-        }
-
-        main ul li::before {
-            content: "🔹"; /* Använd en emoji som punkt */
-            margin-right: 10px;
-        }
-
-
-        main ul {
-            list-style-type: none; /* Använder en emoji som punkt */
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        #history {
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        #history p {
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-            color: #555;
-        }
-
-        .event {
-            margin-bottom: 30px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
@@ -170,6 +124,25 @@
             gap: 15px; /* Avstånd mellan bilder */
         }
 
+        main ul {
+            list-style-type: none; /* Använder en emoji som punkt */
+            padding: 0;
+            margin: 0;
+        }
+
+        main ul li {
+            margin-bottom: 10px;
+        }
+
+        main ul li::before {
+            content: "🔹"; /* Använd en emoji som punkt */
+            margin-right: 10px;
+        }
+
+
+        main ul {
+            list-style-type: none; /* Använder en emoji som punkt */
+        }
         .event-images img {
             width: 47%; /* Gör bilderna responsiva och jämnt fördelade */
             max-height: 700px;
@@ -183,6 +156,7 @@
             transform: scale(1.05); /* Förstorar bilden vid hover */
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         }
+
         /* Fotnot */
         footer {
             background-color: var(--reflex);
@@ -196,6 +170,22 @@
 
         footer p {
             margin: 0;
+        }
+
+        /* Mobile design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .event-images img {
+                width: 100%;
+            }
         }
 
     </style>
